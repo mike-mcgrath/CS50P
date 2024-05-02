@@ -27,7 +27,7 @@ class Jar:
         try :
             if self.cookies + n <= self.space :
                 self.cookies += n
-                print( 'Deposited:', n )
+                print( f'Deposited: {n}' )
             else :
                 raise ValueError( f'Not Enough Space to Deposit {n}' )
         except ValueError as e :
@@ -38,7 +38,7 @@ class Jar:
         try :     
             if n <= self.cookies :
                 self.cookies -= n 
-                print( 'Withdrawn:', n )
+                print( f'Withdrawn: {n}' )
             else :
                 raise ValueError( f'Not Enough Cookies to Withdraw {n}' )
         except ValueError as e :
